@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error Object</title>
+</head>
+<body>
+    
+
+    <script>
+        // try{
+        //     console.log(Hacked_computer)
+        //     throw new TypeError("this is an error")
+        // }
+        // catch(error){
+        //     console.log(error.name)
+        //     console.log(error.message)
+        //     console.log(error.stack)
+        // }
+        try{
+            let age  = parseInt(prompt("what is your age"))
+            if(age>=150){
+
+                throw new Error(" this is probably not true :")
+            }
+        }
+        catch(error){
+            console.log(error.name)
+            console.log(error.message)
+            console.log(error.stack)
+        }
+        console.log(" still running! ")
+    </script>
+</body>
+</html>
